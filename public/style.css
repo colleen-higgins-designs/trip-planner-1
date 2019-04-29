@@ -11,12 +11,17 @@ body {
   flex-direction: column;
 }
 
+header {
+  height: 50px;
+  background-color: orange;
+}
+
 #main {
   display: flex;
 }
 
 #map {
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100vw;
   flex: 0 0 70%;
 }
@@ -29,10 +34,18 @@ body {
 }
 
 #activity-picker {
+  flex: 0 0 48%;
   background-color: blue;
   border-radius: 2px;
+  padding: 15px;
 }
 #itinerary {
+  flex: 0 0 48%;
   background-color: aquamarine;
   border-radius: 2px;
+  padding: 15px;
+}
+
+select {
+  width: 40%;
 }
